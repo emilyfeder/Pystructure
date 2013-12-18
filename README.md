@@ -103,5 +103,30 @@ A few options I've explored:
    make sure to add all the appropriate directories to the sys.path for modules to be
    recognized in the imports.
 
+## Installation/Usage
+
+    $ make install
+    
+To open the web interface at localhost:5000 :
+
+    $ python run_app.py
+
+To run the tests:
+
+    $ nosetests
+
+## References
+
+Some web pages I found useful while creating this project:
+
+The python documentation on modules, packages, and scripts:
+http://docs.python.org/2/tutorial/modules.html
+
+A great article from Jeff Knupp -- I took a look at the source code he provided as an example:
+http://www.jeffknupp.com/blog/2013/08/16/open-sourcing-a-python-project-the-right-way/
+
+This post pushed me to use nose as a test runner:
+http://schettino72.wordpress.com/2008/01/19/11/
+
 
 
