@@ -1,0 +1,14 @@
+%html
+  %body
+
+    %form method=post action="{{url_for('lemma_tokenize')}}"
+      %input name='data' type=textarea placeholder="Type text here"
+      %input type=submit value="Lemma Tokenize"
+    -with messages = get_flashed_messages()
+      -if messages:
+        -for message in messages:
+          %div.alert.alert-success
+            {{ message }}
+    -if result:
+      %p.lemmatization-result
+        {{ ' '.join(result) }}
